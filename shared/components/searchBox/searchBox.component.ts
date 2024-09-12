@@ -23,10 +23,10 @@ export class SearchBoxComponent implements OnInit {
   }
 
 /* En desuso, remplazada por el debouncer del ngOnInit */
-  emitValue(value: string) {
+/*   emitValue(value: string) {
     if (!value) return;
     this.onValue.emit(value)
-  }
+  } */
 
   onKeyPress(searchTerm: string) {
     this.debouncer.next(searchTerm);
